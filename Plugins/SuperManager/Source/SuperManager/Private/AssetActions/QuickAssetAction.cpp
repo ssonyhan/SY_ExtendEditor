@@ -5,6 +5,7 @@
 #include "DebugHeader.h"
 #include "EditorUtilityLibrary.h"
 #include "EditorAssetLibrary.h"
+#include "ObjectTools.h"
 
 
 void UQuickAssetAction::DuplicateAssets(int32 NumOfDuplicates)
@@ -66,6 +67,12 @@ void UQuickAssetAction::AddPrefixes()
 			continue;
 		}
 
+		if (SelectedObject->IsA < UMaterialInstanceConstant>())
+		{
+			OldName.RemoveFromStart(TEXT("M_"));
+			OldName.RemoveFromEnd(TEXT("_Inst"));
+		}
+
 		const FString NewNameWithPrefix = *PrefixFound + OldName;
 
 		UEditorUtilityLibrary::RenameAsset(SelectedObject, NewNameWithPrefix);
@@ -78,4 +85,33 @@ void UQuickAssetAction::AddPrefixes()
 		ShowNotifyInfo(TEXT("Successfully renamed " + FString::FromInt(Counter) + " assets"));
 	}
 
+}
+
+void UQuickAssetAction::RemoveUnusedAssets()
+{
+	TArray<FAssetData> SelectedAssetsData = UEditorUtilityLibrary::GetSelectedAssetData();
+	TArray<FAssetData> UnusedAssetsData;
+
+	for (const FAssetData& SelectedAssetData : SelectedAssetsData)
+	{
+		TArray<FString> AssetRefrencers =
+			UEditorAssetLibrary::FindPackageReferencersForAsset(SelectedAssetData.ObjectPath.ToString());
+
+		if (AssetRefrencers.Num() == 0)
+		{
+			UnusedAssetsData.Add(SelectedAssetData);
+		}
+	}
+
+	if (UnusedAssetsData.Num() == 0)
+	{
+		ShowMsgDialog(EAppMsgType::Ok, TEXT("No unused asset found among selected assets"), false);
+		return;
+	}
+
+	const int32 NumOfAssetsDeleted = ObjectTools::DeleteAssets(UnusedAssetsData);
+
+	if (NumOfAssetsDeleted == 0) return;
+
+	ShowNotifyInfo(TEXT("Successfully deleted " + FString::FromInt(NumOfAssetsDeleted) + TEXT(" unused assets")));
 }

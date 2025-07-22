@@ -14,6 +14,13 @@ void EmptyLinkFunctionForGeneratedCodeQuickAssetAction() {}
 	SUPERMANAGER_API UClass* Z_Construct_UClass_UQuickAssetAction_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_SuperManager();
 // End Cross Module References
+	DEFINE_FUNCTION(UQuickAssetAction::execRemoveUnusedAssets)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RemoveUnusedAssets();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UQuickAssetAction::execAddPrefixes)
 	{
 		P_FINISH;
@@ -35,6 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeQuickAssetAction() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AddPrefixes", &UQuickAssetAction::execAddPrefixes },
 			{ "DuplicateAssets", &UQuickAssetAction::execDuplicateAssets },
+			{ "RemoveUnusedAssets", &UQuickAssetAction::execRemoveUnusedAssets },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -96,6 +104,29 @@ void EmptyLinkFunctionForGeneratedCodeQuickAssetAction() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics::Function_MetaDataParams[] = {
+		{ "CallInEditor", "true" },
+		{ "ModuleRelativePath", "Public/AssetActions/QuickAssetAction.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UQuickAssetAction, nullptr, "RemoveUnusedAssets", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics::Function_MetaDataParams), Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UQuickAssetAction);
 	UClass* Z_Construct_UClass_UQuickAssetAction_NoRegister()
 	{
@@ -119,6 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeQuickAssetAction() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UQuickAssetAction_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UQuickAssetAction_AddPrefixes, "AddPrefixes" }, // 1239928128
 		{ &Z_Construct_UFunction_UQuickAssetAction_DuplicateAssets, "DuplicateAssets" }, // 3690016543
+		{ &Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets, "RemoveUnusedAssets" }, // 3394612261
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UQuickAssetAction_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -169,9 +201,9 @@ void EmptyLinkFunctionForGeneratedCodeQuickAssetAction() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SY_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UQuickAssetAction, UQuickAssetAction::StaticClass, TEXT("UQuickAssetAction"), &Z_Registration_Info_UClass_UQuickAssetAction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuickAssetAction), 1128895912U) },
+		{ Z_Construct_UClass_UQuickAssetAction, UQuickAssetAction::StaticClass, TEXT("UQuickAssetAction"), &Z_Registration_Info_UClass_UQuickAssetAction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuickAssetAction), 1926023594U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SY_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_1033805982(TEXT("/Script/SuperManager"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SY_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_793085816(TEXT("/Script/SuperManager"),
 		Z_CompiledInDeferFile_FID_SY_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SY_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

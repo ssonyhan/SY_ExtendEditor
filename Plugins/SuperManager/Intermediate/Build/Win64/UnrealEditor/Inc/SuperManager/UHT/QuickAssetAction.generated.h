@@ -19,6 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_SY_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_27_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_SY_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execRemoveUnusedAssets); \
 	DECLARE_FUNCTION(execAddPrefixes); \
 	DECLARE_FUNCTION(execDuplicateAssets);
 
