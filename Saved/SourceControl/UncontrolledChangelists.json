@@ -1,0 +1,28 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/LV_ToolTestMap.umap",
+				"D:/UnrealRnD/SY_ExtendEditor/Plugins/SuperManager/Content/NewEditorUtilityBlueprint.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/BP_NewBlueprint.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/BP_NewBlueprint_3.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/BP_NewBlueprint_2.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/BP_NewBlueprint_1.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NewBlueprint_1.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NewBlueprint_2.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NewBlueprint_3.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/M_NewMaterial.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NS_NewNiagaraSystem.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NewBlueprint.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NewBlueprint_1.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NewBlueprint_2.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NewBlueprint_3.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NewBlueprint_4.uasset",
+				"D:/UnrealRnD/SY_ExtendEditor/Content/Maps/NewBlueprint_5.uasset"
+			]
+		}
+	]
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\SY_ExtendEditor.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SY_ExtendEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SY_ExtendEditorEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\SuperManager">
+      <UniqueIdentifier>{65017A13-CCC4-33B2-A7D8-1471361CDC44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\SuperManager\Source">
+      <UniqueIdentifier>{97717827-5EDC-38E3-9B6B-F8DE9AAE9464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager">
+      <UniqueIdentifier>{281B97EA-4224-3594-B9A5-1C4D2BCBA3C9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SuperManager\Source\SuperManager\SuperManager.Build.cs">
+      <Filter>Plugins\SuperManager\Source\SuperManager</Filter>
+    </None>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Private">
+      <UniqueIdentifier>{FB30F966-CEBC-3124-AA3C-3AAF01109C32}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\SuperManager.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Private\AssetActions">
+      <UniqueIdentifier>{FFEEB1F4-03A4-30A4-9F94-467A504D6593}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\AssetActions\QuickAssetAction.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private\AssetActions</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Public">
+      <UniqueIdentifier>{0C308D3C-15B6-3811-B7FE-07C2E9BFD5A3}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\DebugHeader.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\SuperManager.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Public\AssetActions">
+      <UniqueIdentifier>{DD3346C4-5888-3A16-8A40-9C065E066145}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\AssetActions\QuickAssetAction.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public\AssetActions</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\SuperManager\SuperManager.uplugin">
+      <Filter>Plugins\SuperManager</Filter>
+    </None>
+    <Filter Include="Plugins\SuperManager\Resources">
+      <UniqueIdentifier>{982C0006-5B0D-3AB8-8682-9FD784633D0F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SuperManager\Resources\Icon128.png">
+      <Filter>Plugins\SuperManager\Resources</Filter>
+    </None>
+    <Filter Include="Source\SY_ExtendEditor">
+      <UniqueIdentifier>{89CDE384-B529-3406-BE82-6BBF325F7E1A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SY_ExtendEditor\SY_ExtendEditor.Build.cs">
+      <Filter>Source\SY_ExtendEditor</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\SY_ExtendEditor\SY_ExtendEditor.cpp">
+      <Filter>Source\SY_ExtendEditor</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SY_ExtendEditor\SY_ExtendEditor.h">
+      <Filter>Source\SY_ExtendEditor</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

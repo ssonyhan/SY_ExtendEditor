@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SY_ExtendEditor",
+			"Path": "..\\Source\\SY_ExtendEditor.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SY_ExtendEditorEditor",
+			"Path": "..\\Source\\SY_ExtendEditorEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

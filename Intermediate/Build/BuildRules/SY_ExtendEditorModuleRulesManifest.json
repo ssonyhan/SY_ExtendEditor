@@ -1,0 +1,9 @@
+{
+	"SourceFiles": [
+		"D:\\UnrealRnD\\SY_ExtendEditor\\Source\\SY_ExtendEditor\\SY_ExtendEditor.Build.cs",
+		"D:\\UnrealRnD\\SY_ExtendEditor\\Plugins\\SuperManager\\Source\\SuperManager\\SuperManager.Build.cs",
+		"D:\\UnrealRnD\\SY_ExtendEditor\\Source\\SY_ExtendEditor.Target.cs",
+		"D:\\UnrealRnD\\SY_ExtendEditor\\Source\\SY_ExtendEditorEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}
